@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    background: #272c35;
+    color: white;
+}
+
+.user-post{
+    border: 1px solid white;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uoft-image{
+    border-radius: 50%;
+}
+
+.post-name{
+    text-align: left;
+    margin-left: 30%;
+}
+
+.post-heading{
+    margin-left: 40%;
+    text-align: center;
+}
+
+.post-description{
+    margin-left: 710%;
+    text-align: center;
+}
+
+/*
+#title {
+    background-color: rgb(19, 135, 173);
+}
+
+.boxed {
+    border: 50px black;
+}
+*/
+
+/*
+.post-title#first-post{
+    color: red;
+    font-size: 2em;
+}
+
+.post-title{
+    width: 20%;
+    margin: auto;
+}
+*/
+
+.post{
+    width: 75%;
+    margin: auto;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    margin: auto
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title id="title">Unofficial UofT Website</title>
+  <link rel="stylesheet" href="../static/main.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../static/script.js"></script>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    
+    <img class= "uoft-image" src=https://coursera-university-assets.s3.amazonaws.com/04/1df8943d27a485a986a3ebf10c83d9/UofT-Crest-Square.png>
+    
+    <p>Welcome to this forum! Share your thoughts about your courses.</p>
+    
+    <br>
+        <div id="inputName">
+            <input type="text" id="username" placeholder="Your Name"><br>
+        </div>
+        <div id=inputHeading>
+          <input type="text" id="heading" placeholder="Subject"><br>
+        </div>
+        <div id="inputMessage">
+            <input type="text" id="description" placeholder="Message"><br><br>
+        </div>
+    
+   <div> <button type = "button" id = "post-button">Post</button> </div>
+   <br><br>
+
+    {% for post in posts %}
+      <div class="user-post">
+        <div class="second-div">
+          <p class="post-name"><b>{{post["username"]}}</b></p>
+          <p class="post-description">{{post["description"]}}</p>
+          
+        </div>
+        <h2 class="post-heading">{{post["heading"]}}</h2>
+      </div>
+      
+    {% endfor %}
+
+
+
+</body>
+</html>
